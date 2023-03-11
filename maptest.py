@@ -5,6 +5,10 @@ import streamlit as st
 import operator
 import random
 from PIL import Image
+import requests
+
+url = "https://github.com/SWS-ZERBOUT/ORCS_TSP/blob/main/coordinates.json"
+s = requests.get(url).content
 
 #image = Image.open('D:\Codes\Python\Club\streamlit-app-knapsack-main\streamlit-app-knapsack-main\png1.png')
 #####################################################################################################
@@ -14,7 +18,7 @@ st.title('Traveling Salesman Solver')
 st.write(""" The travelling salesman problem (also called the travelling salesperson problem or TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?" It is an NP-hard problem in combinatorial optimization, important in theoretical computer science and operations research.""")
 #####################################################################################################
 #Importing Data
-df1 = pd.read_json('D:\Codes\Python\Club\Genetic-Algorithm-for-TSP-resolution-main\coordinates.json')
+df1 = pd.read_json(s)
 df2 = df1[0:15]
 df3 = df1[0:15]
 df3.drop('lat',inplace=True,axis=1)
