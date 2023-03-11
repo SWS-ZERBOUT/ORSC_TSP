@@ -7,7 +7,7 @@ import random
 from PIL import Image
 
 
-url = "https://github.com/SWS-ZERBOUT/ORCS_TSP/blob/main/coordinates.json"
+url = "https://raw.githubusercontent.com/SWS-ZERBOUT/ORCS_TSP/main/coordinates.json"
 
 
 #image = Image.open('D:\Codes\Python\Club\streamlit-app-knapsack-main\streamlit-app-knapsack-main\png1.png')
