@@ -3,7 +3,6 @@ import pandas as pd
 import pydeck as pdk
 import streamlit as st
 import operator
-import matplotlib.pyplot as plt
 import random
 from PIL import Image
 
