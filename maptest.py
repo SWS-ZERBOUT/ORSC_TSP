@@ -6,7 +6,7 @@ import operator
 import random
 from PIL import Image
 
-image = Image.open('D:\Codes\Python\Club\streamlit-app-knapsack-main\streamlit-app-knapsack-main\png1.png')
+#image = Image.open('D:\Codes\Python\Club\streamlit-app-knapsack-main\streamlit-app-knapsack-main\png1.png')
 #####################################################################################################
 #Some Markdown
 st.title('Traveling Salesman Solver')
@@ -297,4 +297,4 @@ pdk.Layer(
 r = pdk.Deck(layers=layer, initial_view_state=view_state, tooltip={"text": "{city}"})
 st.pydeck_chart(r)
 st.write(""" The genetic algorithm is a method for solving both constrained and unconstrained optimization problems that is based on natural selection, the process that drives biological evolution. The genetic algorithm repeatedly modifies a population of individual solutions. At each step, the genetic algorithm selects individuals from the current population to be parents and uses them to produce the children for the next generation. Over successive generations, the population "evolves" toward an optimal solution""")
-st.image(image)
+#st.image(image)
