@@ -4,7 +4,7 @@ import pydeck as pdk
 import streamlit as st
 import operator
 import random
-from PIL import Image
+
 
 
 url = "https://raw.githubusercontent.com/SWS-ZERBOUT/ORCS_TSP/main/coordinates.json"
@@ -301,4 +301,4 @@ pdk.Layer(
 r = pdk.Deck(layers=layer, initial_view_state=view_state, tooltip={"text": "{city}"})
 st.pydeck_chart(r)
 st.write(""" The genetic algorithm is a method for solving both constrained and unconstrained optimization problems that is based on natural selection, the process that drives biological evolution. The genetic algorithm repeatedly modifies a population of individual solutions. At each step, the genetic algorithm selects individuals from the current population to be parents and uses them to produce the children for the next generation. Over successive generations, the population "evolves" toward an optimal solution""")
-#st.image(image)
+st.image("https://raw.githubusercontent.com/SWS-ZERBOUT/ORCS_TSP/main/png1.png")
